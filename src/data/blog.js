@@ -25,6 +25,13 @@ const blogData = {
       preview: "React, meet OOJS.",
       minutes: 47,
     },
+    {
+      id: 4,
+      title: "Test blog post",
+      date: "April 18, 2001",
+      preview: "Test preview",
+      minutes: 24
+    }
   ],
 };
 
