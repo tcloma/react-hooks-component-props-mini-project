@@ -1,7 +1,6 @@
 const Article = ({ title, date = 'January 1, 1970', preview, minutes }) => {
   let bento = ''
   let coffee = ''
-  
   // Check if it's 30 mins or more
   // If yes, display in bento boxes, if not display in coffee
   if (minutes >= 30) {
@@ -17,13 +16,11 @@ const Article = ({ title, date = 'January 1, 1970', preview, minutes }) => {
   else {
     // Every 5 minutes render a coffee
     console.log(minutes)
-    for (let i = 0; i < (minutes * 2)/10; i++) {
+    for (let i = 0; i < minutes/5; i++) {
       coffee += '☕️'
     }
     console.log(coffee)
   }
-
-
 
   return (
     <article>
